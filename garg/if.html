@@ -1,0 +1,22 @@
+<html>
+<head>
+ <script>
+  function checkData() {
+  if (document.form1.threeChar.value.length == 3) {
+    alert("Value you entered is true");
+  } else {
+    alert("Enter exactly three characters. " +
+    document.form1.threeChar.value + " is not valid.");
+    return false;
+  }
+}
+ </script>
+</head>
+<body>
+<form name = "form1" onSubmit = "checkData()">
+ <input type = text name = "threeChar" >
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
+

@@ -1,0 +1,33 @@
+<script>
+  var sales = "Toyota";
+function carTypes(name){
+ if(name === "Honda"){
+   return name;
+  }else{
+    return "Sorry, we don't sell" + name + ".";
+   }
+}
+var car = {myCar: "Saturn", getCar: carTypes("Honda"), special: sales}
+console.log(car.myCar);   // Saturn
+console.log(car.getCar);  // Honda
+console.log(car.special); // Toyota
+var car = { manyCars: {a: "Saab", "b": "Jeep"}, 7: "Mazda" };
+
+console.log(car.manyCars.b); // Jeep
+console.log(car[7]); // Mazda
+var foo = {a: "alpha", 2: "two"};
+console.log(foo.a);    // alpha
+console.log(foo[2]);   // two
+//console.log(foo.2);  // Error: missing ) after argument list
+//console.log(foo[a]); // Error: a is not defined
+console.log(foo["a"]); // alpha
+console.log(foo["2"]); // two
+console.log("John's cat".length);
+var quote = "He read \"The Cremation of Sam McGee\" by R.W. Service.";
+console.log(quote);
+var str = "this string \
+is broken \
+across multiple\
+lines."
+console.log(str);  
+</script>
